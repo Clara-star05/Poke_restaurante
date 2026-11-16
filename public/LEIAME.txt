@@ -1,0 +1,4 @@
+Plaintext
+LOGIN DE ADMINISTRADOR DE TESTE
+Email: adminpoke@poke.com
+Senha: 1234

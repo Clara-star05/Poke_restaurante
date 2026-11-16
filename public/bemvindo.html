@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Poke & Sushi | Casa Poke</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-formulario">
+    <header class="topo-interno">
+        <a class="marca" style="color: var(--verde-escuro);" href="index.html">CASA <span>POKE</span></a>
+        <div class="acoes-topo-interno">
+            <span id="saudacao" class="texto-saudacao">Olá!</span>
+            <a id="linkAdmin" class="botao botao-dourado" href="admin.html" style="display: none;">Painel Admin</a>
+            <button class="botao botao-cinza" onclick="sair()">Sair</button>
+        </div>
+    </header>
+
+    <main class="container-catalogo">
+        <div class="cabecalho-catalogo">
+            <p class="sobretitulo">CARDÁPIO FRESCO DO DIA</p>
+            <h1>Catálogo de Poke & Sushi</h1>
+            <p class="descricao-form">Escolha seus favoritos preparados na hora com ingredientes selecionados.</p>
+        </div>
+
+        <h2 class="titulo-categoria">Pokes Especiais</h2>
+        <div class="grade-produtos" id="lista-pokes"></div>
+
+        <h2 class="titulo-categoria" style="margin-top: 40px;">Sushis & Combinados</h2>
+        <div class="grade-produtos" id="lista-sushis"></div>
+
+        <div class="barra-pedido" id="barra-pedido">
+            <div>
+                <strong>Seu Pedido:</strong> <span id="resumo-itens">Nenhum item selecionado</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <strong id="valor-total">R$ 0,00</strong>
+                <button class="botao botao-dourado" onclick="finalizarPedido()">Finalizar Pedido</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="bemvindo.js"></script>
+</body>
+</html>

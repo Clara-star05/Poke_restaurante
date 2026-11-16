@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração | Casa Poke</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-formulario">
+    <main id="conteudo" class="painel-admin" style="display: none;">
+        <a class="marca marca-centralizada" href="index.html">CASA <span>POKE</span></a>
+        <p class="sobretitulo">PAINEL DE CONTROLE</p>
+        <h1>Administração de usuários</h1>
+        <p class="descricao-form">Consulte, edite ou remova os cadastros de clientes.</p>
+
+        <div class="busca-linha">
+            <div>
+                <label for="buscarCPF">Buscar usuário pelo CPF</label>
+                <input type="text" id="buscarCPF" placeholder="Digite o CPF">
+            </div>
+            <button class="botao botao-verde" onclick="buscarUsuario()">Buscar</button>
+            <button class="botao botao-cinza" onclick="carregarUsuarios()">Mostrar todos</button>
+        </div>
+
+        <div class="tabela-scroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>CPF</th>
+                        <th>Telefone</th>
+                        <th>Cidade/UF</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-corpo"></tbody>
+            </table>
+        </div>
+
+        <div class="acoes-painel">
+            <a class="voltar" href="bemvindo.html">← Ver Catálogo</a>
+            <button class="botao botao-cinza" onclick="sairAdmin()">Sair</button>
+        </div>
+    </main>
+
+    <!-- Modal de Edição do Usuário -->
+    <div id="modal-edicao" class="modal-fundo" style="display: none;">
+        <div class="cartao-form cartao-cadastro modal-conteudo">
+            <p class="sobretitulo">EDITAR CADASTRO</p>
+            <h2>Dados do Usuário</h2>
+            <p class="descricao-form">Altere os campos desejados abaixo, incluindo a senha.</p>
+
+            <input type="hidden" id="edit-id">
+
+            <div class="grade-cadastro">
+                <div>
+                    <label for="edit-nome">Nome</label>
+                    <input type="text" id="edit-nome">
+                </div>
+                <div>
+                    <label for="edit-sobrenome">Sobrenome</label>
+                    <input type="text" id="edit-sobrenome">
+                </div>
+                <div>
+                    <label for="edit-cpf">CPF</label>
+                    <input type="text" id="edit-cpf">
+                </div>
+                <div>
+                    <label for="edit-telefone">Telefone</label>
+                    <input type="text" id="edit-telefone">
+                </div>
+                <div class="campo-completo">
+                    <label for="edit-email">Email</label>
+                    <input type="email" id="edit-email">
+                </div>
+                <div class="campo-completo">
+                    <label for="edit-senha">Senha</label>
+                    <input type="text" id="edit-senha">
+                </div>
+                <div class="campo-completo">
+                    <label for="edit-rua">Rua</label>
+                    <input type="text" id="edit-rua">
+                </div>
+                <div>
+                    <label for="edit-cep">CEP</label>
+                    <input type="text" id="edit-cep">
+                </div>
+                <div>
+                    <label for="edit-cidade">Cidade</label>
+                    <input type="text" id="edit-cidade">
+                </div>
+                <div class="campo-completo">
+                    <label for="edit-estado">Estado</label>
+                    <input type="text" id="edit-estado">
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 10px; margin-top: 22px;">
+                <button class="botao botao-verde" style="flex: 1;" onclick="salvarEdicao()">Salvar Alterações</button>
+                <button class="botao botao-cinza" style="flex: 1;" onclick="fecharModal()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

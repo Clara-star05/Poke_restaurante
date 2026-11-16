@@ -1,0 +1,61 @@
+{
+  "pessoas": [
+    {
+      "id": "1",
+      "nome": "Administrador",
+      "sobrenome": "Casa Poke",
+      "cpf": "000.000.000-00",
+      "email": "adminpoke@poke.com",
+      "senha": "1234",
+      "rua": "Rua Principal, 100",
+      "cep": "00000-000",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "telefone": "(11) 99999-9999",
+      "admin": true
+    },
+    {
+      "id": "ZnJzEcCj3Jo",
+      "nome": "Leonardo",
+      "sobrenome": "Schineider",
+      "cpf": "12345678912",
+      "telefone": "112345678912345",
+      "email": "leleo@gmail.com",
+      "senha": "1234",
+      "rua": "Jardim Aeroporto 3",
+      "cep": "11111111",
+      "cidade": "Mogi Das Cruzes",
+      "estado": "sp",
+      "admin": false
+    },
+    {
+      "id": "P2eTAKo9LO8",
+      "nome": "Falarus",
+      "sobrenome": "Yuvondai",
+      "cpf": "920.149.710-56",
+      "telefone": "00000000000",
+      "email": "falarus@gmail.com",
+      "senha": "1234",
+      "rua": "João Bosco Pinheiro",
+      "cep": "78056-766",
+      "cidade": "Cuiabá",
+      "estado": "MT",
+      "admin": false
+    },
+    {
+      "nome": "vvvv",
+      "sobrenome": "aaaaaaaaaaa",
+      "cpf": "3333333333333",
+      "email": "vvv@gmail.com",
+      "senha": "1234",
+      "rua": "aaaaaaaaaaaaaaaaaaa",
+      "cep": "11111111",
+      "cidade": "aaaaaaaaaaaaaaaaaaa",
+      "estado": "sp",
+      "telefone": "33333333333",
+      "admin": false,
+      "id": "lWczYJ_HGiQ"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
